@@ -9,13 +9,50 @@
         <title>Star Wars Character Search</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/css/normalize.css">
         <link rel="stylesheet" href="assets/css/styles.css">
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        <h1>test</h1>
+        <!-- SEARCH BAR -->
+        <div class="search-wrapper">
+            <form>
+                <input type="text" id="search" placeholder="Search by character name">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+        <!-- /SEARCH BAR -->
+
+        <!-- MIDDLE SECTION -->
+        <div class="mid-wrapper">
+            <!-- NUMBER OF RESULTS -->
+            <div class="results-value">
+                <p>0 Results</p>
+            </div>
+            <!-- /NUMBER OF RESULTS -->
+
+            <!-- GENDER FILTER -->
+            <div class="filter-gender">
+                <p>Gender</p>
+                <select>
+                    <option value="0">Filter by gender</option>
+                    <option value="1">Male</option>
+                    <option value="2">Female</option>
+                </select>
+            </div>
+            <!-- /GENDER FILTER -->
+        </div>
+        <!-- /MIDDLE SECTIONS-->
+
+        <!-- MAIN RESULTS WINDOW -->
+        <div class="results-wrapper">
+            <div class="results-content">
+                <img src="assets/graphics/vader-icon.svg">
+                <p>Search by character name</p>
+            </div>
+        </div>
+        <!-- /MAIN RESULTS WINDOW -->
+
+
         
         <script src="assets/js/main.js" async defer></script>
     </body>

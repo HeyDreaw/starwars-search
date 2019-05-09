@@ -1,0 +1,141 @@
+/* GLOBAL */
+
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: #F7F8FA;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 75px;
+}
+
+/* SEARCH BAR */
+
+.search-wrapper {
+    background: #fff;
+    border: 1px solid #F0F0F0;
+    box-shadow: 0px 4px 4px #818181;
+    width: 60%;
+    height: 85px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+.search-wrapper input,
+.search-wrapper button {
+    display: inline-block;
+    border-radius: 3px;
+    margin: 15px 0 ;
+    height: 50px;
+}
+
+.search-wrapper input {
+    border: 2px solid #F0F0F0;
+    background: #F7F8FA;
+    width: 85%;
+    margin-right: 15px;
+}
+
+.search-wrapper button {
+    background: #52A2FF;
+    color: #FFF;
+    border: 1px solid #52A2FF;
+    width: 10%;
+    transition: box-shadow 0.3s ease;
+}
+
+.search-wrapper button:hover {
+    background-color: #0F7CFF;
+    box-shadow: 0 8px 6px -6px black;
+}
+
+#search[type="text"],
+#search[type="text"]::placeholder {
+    box-sizing: border-box;
+    padding-left: 10px;
+}
+
+#search[type="text"]::placeholder {
+    color: #a7a7a7;
+}
+
+/* NUMBER OF RESULTS AND GENDER FILTER */
+
+.mid-wrapper {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.results-value,
+.filter-gender p {
+    color: #999;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.results-value {
+    float: left;
+}
+
+.filter-gender {
+    position: relative;
+    float: right;
+}
+
+.filter-gender p {
+    display: inline;
+    margin-right: 15px;
+}
+
+.filter-gender select {
+    appearance: none;
+    -webkit-appearance: none;
+    background: url(../graphics/chevron--down.svg) no-repeat right;
+    border: 5px solid #FFF;
+    font-weight: 600;
+    font-size: 16px;
+    background-color: #FFF;
+    padding: 10px 40px 10px 10px;
+    box-shadow: 0px 2px 4px #818181;
+}
+
+/* DISPLAY RESULTS WINDOW */
+
+.results-wrapper {
+    position: absolute;
+    width: 100%;
+    margin-top: 80px;
+    margin-bottom: 70px;
+    height: auto;
+}
+
+.results-content {
+    background: #fff;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    height: 450px;
+    border: 1px solid #F0F0F0;
+    box-shadow: 0px 2px 4px #c5c5c5;
+}
+
+.results-content img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    width: 100px;
+    margin-top: -50px;
+    margin-left: -50px;
+}
+
+.results-content p {
+    margin-top: 300px;
+    color: #A7A7A7;
+    font-size: 24px;
+    font-weight: 500;
+}
