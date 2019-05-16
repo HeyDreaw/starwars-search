@@ -21,7 +21,7 @@ function showResults(names) {
         //Filter by gender
 
         let dropdown = $('#select-gender');
-        
+
 
         var personHair = '';
         var personGender = '';
@@ -60,14 +60,11 @@ $('form').submit(function(evt) {
     // prevent submit button from submitting a form
     evt.preventDefault();
 
-    // empty the ul.hide-checkboxes wrapper
-    $("ul.hide-checkboxes").html('');
     $(".return-value p").html('0 RESULTS');
 
     // capture the text of the input field
     var $searchField = $('.search');
     var name = $searchField.val();
-    console.log(name);
 
     // if the length of name is nothing, stop the search
     if (name.length === 0) {
@@ -80,8 +77,6 @@ $('form').submit(function(evt) {
     var swAPI = 'https://swapi.co/api/people/';
 
     // store query data to send to api
-    // reference https://swapi.co/api/people/?search=r2
-    // convert url query string "search=r2" to json object structure
     var data = {
         search: name
     };
@@ -94,11 +89,4 @@ $('form').submit(function(evt) {
     // data has to be constructed from the user input
     $.getJSON(swAPI, data, jsonSuccess);
 
-
-});
-
-// gender filter button.
-$('.gender').on('click', function(event) {
-    // reveal gender filter button
-    $(this).parent().find('ul').toggle(0);
 });
