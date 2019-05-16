@@ -167,3 +167,9 @@ html {
 hr {
     border-top: 1px solid #F0F0F0;
 }
+
+#no-results {
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+}

@@ -66,11 +66,6 @@ $('form').submit(function(evt) {
     var $searchField = $('.search');
     var name = $searchField.val();
 
-    // if the length of name is nothing, stop the search
-    if (name.length === 0) {
-        return false;
-    }
-
     $searchField.prop("disabled", true);
 
     // ajax request swAPI (API to query), data (search the API), showResults (DOM manipulation)
