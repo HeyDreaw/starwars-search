@@ -16,7 +16,7 @@
         <!-- SEARCH BAR -->
         <div class="search-wrapper">
             <form>
-                <input type="text" id="search" placeholder="Search by character name">
+                <input type="text" class="search" placeholder="Search by character name" />
                 <button type="submit">Search</button>
             </form>
         </div>
@@ -25,7 +25,7 @@
         <!-- MIDDLE SECTION -->
         <div class="mid-wrapper">
             <!-- NUMBER OF RESULTS -->
-            <div class="results-value">
+            <div class="return-value">
                 <p>0 Results</p>
             </div>
             <!-- /NUMBER OF RESULTS -->
@@ -33,10 +33,10 @@
             <!-- GENDER FILTER -->
             <div class="filter-gender">
                 <p>Gender</p>
-                <select>
+                <select id="select-gender">
                     <option value="0">Filter by gender</option>
-                    <option value="1">Male</option>
-                    <option value="2">Female</option>
+                    <option value="1" id="male">Male</option>
+                    <option value="2" id="female">Female</option>
                 </select>
             </div>
             <!-- /GENDER FILTER -->
@@ -50,10 +50,8 @@
                 <p>Search by character name</p>
             </div>
         </div>
-        <!-- /MAIN RESULTS WINDOW -->
 
-
-        
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="assets/js/main.js" async defer></script>
     </body>
 </html>

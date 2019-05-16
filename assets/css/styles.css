@@ -31,6 +31,8 @@ html {
     border-radius: 3px;
     margin: 15px 0 ;
     height: 50px;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .search-wrapper input {
@@ -53,14 +55,14 @@ html {
     box-shadow: 0 8px 6px -6px black;
 }
 
-#search[type="text"],
-#search[type="text"]::placeholder {
+.search[type="text"],
+.search[type="text"]::placeholder {
     box-sizing: border-box;
     padding-left: 10px;
 }
 
-#search[type="text"]::placeholder {
-    color: #a7a7a7;
+.search[type="text"]::placeholder {
+    color: #b8b8b8;
 }
 
 /* NUMBER OF RESULTS AND GENDER FILTER */
@@ -70,14 +72,15 @@ html {
     margin: 0 auto;
 }
 
-.results-value,
+.return-value,
 .filter-gender p {
     color: #999;
     font-weight: 500;
     text-transform: uppercase;
+    font-size: 20px;
 }
 
-.results-value {
+.return-value {
     float: left;
 }
 
@@ -138,4 +141,29 @@ html {
     color: #A7A7A7;
     font-size: 24px;
     font-weight: 500;
+}
+
+.character-name {
+    font-size: 20px;
+    color: #414141;
+    font-weight: 500;
+    margin: 10px 10px 0 10px;
+    padding: 10px 10px 0 10px;
+}
+
+.character-details {
+    color: #999;
+    margin: 10px;
+    padding: 10px;
+    margin-top: 0;
+}
+
+.character-name,
+.character-details {
+    list-style: none;
+    text-transform: capitalize;
+}
+
+hr {
+    border-top: 1px solid #F0F0F0;
 }
