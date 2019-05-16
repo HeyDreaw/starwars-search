@@ -18,11 +18,6 @@ function showResults(names) {
           person.gender = 'No Gender';
         }
 
-        //Filter by gender
-
-        let dropdown = $('#select-gender');
-
-
         var personHair = '';
         var personGender = '';
 
@@ -41,7 +36,11 @@ function showResults(names) {
         resultHTML += '<hr>';
         count++;
 
-        $('.return-value p').text(count + " RESULTS");
+        if (count != 1) {
+            $('.return-value p').text(count + " RESULTS");
+        } else {
+            $('.return-value p').text("1 RESULT");
+        }
 
     }); // end of loop and matching characters
     resultHTML += '</ul>'; // close the ul tag
