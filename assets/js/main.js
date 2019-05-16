@@ -59,8 +59,6 @@ $('form').submit(function(evt) {
     // prevent submit button from submitting a form
     evt.preventDefault();
 
-    $(".return-value p").html('0 RESULTS');
-
     // capture the text of the input field
     var $searchField = $('.search');
     var name = $searchField.val();
