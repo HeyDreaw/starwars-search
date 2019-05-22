@@ -36,7 +36,7 @@ function showResults(names) {
         resultHTML += '<hr>';
         count++;
 
-        if (count != 1) {
+        if (count != 1 || count == 0) {
             $('.return-value p').text(count + " RESULTS");
         } else {
             $('.return-value p').text("1 RESULT");
@@ -79,6 +79,10 @@ $('form').submit(function(evt) {
     }
 
     // data has to be constructed from the user input
-    $.getJSON(swAPI, data, jsonSuccess);
+    $.getJSON(swAPI, data, jsonSuccess, function() {
+        mode: 'cors'
+    });
 
 });
+
+console.log(resultsCache);
